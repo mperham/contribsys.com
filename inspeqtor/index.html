@@ -3,8 +3,8 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>contrib sys</title>
-        <meta name="description" content="">
+        <title>Inspeqtor - application infrastructure monitoring</title>
+        <meta name="description" content="inspeqtor, application monitoring, service monitoring, process monitoring">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
@@ -37,8 +37,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="../">Home</a></li>
-            <li><a href="/sidekiq/">Sidekiq</a></li>
-            <li class="active"><a href="/inspeqtor/">Inspeqtor</a></li>
+            <li><a href="../sidekiq/">Sidekiq</a></li>
+            <li class="active"><a href="../inspeqtor/">Inspeqtor</a></li>
           </ul>
         </div> <!--/.nav-collapse -->
       </div>
@@ -55,9 +55,9 @@
                         <!-- <h1>Inspeqtor</h1> -->
                         <img src="../images/logo-inspeqtor.png" class="img-responsive center-block m-btm" alt="Inspeqtor">
                         <h2>
-                            Service monitoring, reimagined.
+                            Application infrastructure monitoring, reimagined.
                         </h2>
-                        <a class="btn btn-success btn-lg" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                        <a class="btn btn-success btn-lg" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
                         <img src="../images/inspeqtor-cmd.png" class="img-responsive" alt='' />
@@ -92,7 +92,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Monitor upstart-, runit-, systemd- or launchd-managed services</td>
+                            <td>Monitor init-managed services</td>
                             <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
                             <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
                         </tr>
@@ -102,12 +102,12 @@
                             <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
                         </tr>
                         <tr>
-                            <td>Monitor daemon-specific metrics (e.g. redis, memcached, mysql, nginx...)</td>
+                            <td>Monitor daemon-specific metrics (e.g. redis, mysql, nginx...)</td>
                             <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
                             <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
                         </tr>
                         <tr>
-                            <td>Monitor and alert based on host CPU, load, swap and disk usage</td>
+                            <td>Monitor host CPU, load, swap and disk usage</td>
                             <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
                             <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
                         </tr>
@@ -127,6 +127,11 @@
                             <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
                         </tr>
                         <tr>
+                            <td>Route alerts to an email address</td>
+                            <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
                             <td>Monitor legacy init.d services with PID files</td>
                             <td></td>
                             <!-- <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td> -->
@@ -139,7 +144,7 @@
                             <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
                         </tr>
                         <tr>
-                            <td>Route alerts to chat rooms: Slack, HipChat, Campfire or Flowdock</td>
+                            <td>Route alerts to your team chat room</td>
                             <td></td>
                             <!-- <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td> -->
                             <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
@@ -152,23 +157,16 @@
                         </tr>
                         <tr>
                             <td>License</td>
-                            <td class="text-center text-success">LGPL</td>
+                            <td class="text-center text-success">GPL</td>
                             <td class="bg-success text-center">Commercial</td>
                         </tr>
-                        <!-- <tr>
-                            <td>Cost</td>
-                            <td class="text-center text-success">Free</td>
-                            <td class="bg-success text-center">User-based<br>(see below)</td>
-                        </tr> -->
                     </tbody>
                 </table>
 
                 </div>
 
             </div>
-            
         </div>
-        
     </section>
 <!-- //end why go PRO -->
 
@@ -192,7 +190,7 @@
                             <h3 class="panel-title">
                                 Unlimited<br>machines
                             </h3>
-                            <a class="btn btn-default">Try it!</a>
+                            <a class="btn btn-default" href="https://github.com/mperham/inspeqtor/wiki#getting-started">Try Inspeqtor</a>
                         </div>
                     </div>
                 </div>
@@ -207,7 +205,7 @@
                             <h3 class="panel-title">
                                 0-20<br>machines
                             </h3>
-                            <a class="btn btn-success" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                            <a class="btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                         </div>
                     </div>
                 </div>
@@ -222,7 +220,7 @@
                             <h3 class="panel-title">
                                 21-50<br>machines
                             </h3>
-                            <a class="btn btn-success" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                            <a class="btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                         </div>
                     </div>
                 </div>                <div class="col-xs-6 col-sm-3 col-md-2">
@@ -236,7 +234,7 @@
                             <h3 class="panel-title">
                                 51-200<br>machines
                             </h3>
-                            <a class="btn btn-success" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                            <a class="btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                         </div>
                     </div>
                 </div>                <div class="col-xs-6 col-sm-3 col-md-2">
@@ -248,24 +246,21 @@
                         </div>
                         <div class="panel-body">
                             <h3 class="panel-title">
-                                Unlimited<br>(site license)
+                                Unlimited<br>License
                             </h3>
-                            <a class="btn btn-success" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                            <a class="btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </section>
 <!-- //end pricing -->
 
 <!--     <section class="" style="display: block;">
 
         <div class="container">
-
             <div class="row">
- 
                 <div class="col-xs-12">
                     <hr>
                     <h2 class="text-center m-btm">Trusted by</h2>
@@ -276,11 +271,10 @@
                     <img src="../images/trusted/digitalocean.png" class="trusted">
                     <img src="../images/trusted/condenast.png" class="trusted">
                     <hr>
-
-                </div>                
+                </div>
             </div>
         </div>
-    </section>  -->       
+    </section>  -->
 
 <!-- Questions/Contact -->
     <section style="display: block;">
@@ -294,10 +288,9 @@
                             </h2>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="h3 list-group-item">
-                                Detailed documentation about configuring and using each Pro feature can be found in the
+                            <li class="list-group-item">
+                                Detailed documentation about Inspeqtor and Inspeqtor Pro can be found in the
         <a class="text-success" target="_new" href="https://github.com/mperham/inspeqtor/wiki">Inspeqtor wiki</a>.
-        Read the <a class="text-success" target="_new" href="https://github.com/mperham/sidekiq/wiki/Pro-FAQ">Inspeqtor Pro FAQ</a> for further detail.
                             </li>
                         </ul>
                     </div>
@@ -309,7 +302,7 @@
                                 Contact
                             </h2>
                         </div>
-                        <ul class="list-group list-group-flush text-center h3">
+                        <ul class="list-group list-group-flush text-center">
                             <li class="list-group-item">
                                 Email <a class="text-success" href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a> with any questions.
                             </li>
@@ -319,11 +312,9 @@
             </div>
             <div class="footer">
                 <hr>
-                <p class="text-center">&copy; 2014 Contributed Systems LLC. <a class="text-muted" href="http://github.com/mperham/contribsys.com">Source</a></p>
+                <p class="text-center">&copy; 2014 Contributed Systems LLC. <a class="text-muted" href="http://github.com/mperham/contribsys.com">source</a></p>
             </div>
-                        
         </div>
-        
     </section>
 <!-- //end questions/contact -->
 
