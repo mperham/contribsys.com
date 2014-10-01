@@ -1,0 +1,343 @@
+<!doctype html>
+<!-- Inspeqtor -->
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>contrib sys</title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="../css/contribsys.css">
+        <script src="../scripts/modernizr.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="/">Contributed Systems</a> -->
+
+          <a href="../"><img src="../images/logo-contribsys-sm.png" class="navbar-brand" alt="Contributed Systems"></a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../">Home</a></li>
+            <li><a href="/sidekiq/">Sidekiq</a></li>
+            <li class="active"><a href="/inspeqtor/">Inspeqtor</a></li>
+          </ul>
+        </div> <!--/.nav-collapse -->
+      </div>
+    </div>
+
+<!-- Main banner -->
+    <section class="bg-gray" style="display: block;">
+
+        <div class="container">
+
+            <div class="clear">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                        <!-- <h1>Inspeqtor</h1> -->
+                        <img src="../images/logo-inspeqtor.png" class="img-responsive center-block m-btm" alt="Inspeqtor">
+                        <h2>
+                            Service monitoring, reimagined.
+                        </h2>
+                        <a class="btn btn-success btn-lg" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                        <img src="../images/inspeqtor-cmd.png" class="img-responsive" alt='' />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<!-- // end main banner -->
+
+<!-- Why go PRO -->
+    <section style="display: block;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="text-center page-section m-btm">
+                        Why you should go PRO
+                    </h2>
+                </div>
+            </div>
+            <div class="row product-row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th class="text-center">Inspeqtor</th>
+                            <th class="bg-success text-center">Inspeqtor Pro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monitor upstart-, runit-, systemd- or launchd-managed services</td>
+                            <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Monitor process memory and CPU usage</td>
+                            <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Monitor daemon-specific metrics (e.g. redis, memcached, mysql, nginx...)</td>
+                            <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Monitor and alert based on host CPU, load, swap and disk usage</td>
+                            <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Alert or restart a process if a rule threshold is breached</td>
+                            <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Alert if a process disappears or changes PID</td>
+                            <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Signal deploy start/stop to silence alerts during deploy</td>
+                            <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Monitor legacy init.d services with PID files</td>
+                            <td></td>
+                            <!-- <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td> -->
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Route alerts to teams or individuals</td>
+                            <td></td>
+                            <!-- <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td> -->
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Route alerts to chat rooms: Slack, HipChat, Campfire or Flowdock</td>
+                            <td></td>
+                            <!-- <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td> -->
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Dedicated email support</td>
+                            <td></td>
+                            <!-- <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td> -->
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>License</td>
+                            <td class="text-center text-success">LGPL</td>
+                            <td class="bg-success text-center">Commercial</td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Cost</td>
+                            <td class="text-center text-success">Free</td>
+                            <td class="bg-success text-center">User-based<br>(see below)</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </section>
+<!-- //end why go PRO -->
+
+<!-- Pricing -->
+    <section style="display: block;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                    <h2 class="text-center page-section m-btm">
+                        Pricing
+                    </h2>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 col-md-offset-1">
+                    <div class="panel panel-default text-center text-muted">
+                        <div class="panel-heading">
+                            <h3 class="text-muted">
+                                Free
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="panel-title">
+                                Unlimited<br>machines
+                            </h3>
+                            <a class="btn btn-default">Try it!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="panel panel-success text-center">
+                        <div class="panel-heading">
+                            <h3>
+                                $25<small>/mo.</small>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="panel-title">
+                                0-20<br>machines
+                            </h3>
+                            <a class="btn btn-success" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="panel panel-success text-center">
+                        <div class="panel-heading">
+                            <h3>
+                                $40<small>/mo.</small>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="panel-title">
+                                21-50<br>machines
+                            </h3>
+                            <a class="btn btn-success" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                        </div>
+                    </div>
+                </div>                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="panel panel-success text-center">
+                        <div class="panel-heading">
+                            <h3>
+                                $80<small>/mo.</small>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="panel-title">
+                                51-200<br>machines
+                            </h3>
+                            <a class="btn btn-success" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                        </div>
+                    </div>
+                </div>                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="panel panel-success text-center">
+                        <div class="panel-heading">
+                            <h3>
+                                $200<small>/mo.</small>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="panel-title">
+                                Unlimited<br>(site license)
+                            </h3>
+                            <a class="btn btn-success" href="https://spacebox.io/s/YSeEjhi5ga">Buy Pro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+<!-- //end pricing -->
+
+<!--     <section class="" style="display: block;">
+
+        <div class="container">
+
+            <div class="row">
+ 
+                <div class="col-xs-12">
+                    <hr>
+                    <h2 class="text-center m-btm">Trusted by</h2>
+                    <img src="../images/trusted/groupon.png" class="trusted">
+                    <img src="../images/trusted/watsi.png" class="trusted">
+                    <img src="../images/trusted/oracle.png" class="trusted">
+                    <img src="../images/trusted/discourse.png" class="trusted">
+                    <img src="../images/trusted/digitalocean.png" class="trusted">
+                    <img src="../images/trusted/condenast.png" class="trusted">
+                    <hr>
+
+                </div>                
+            </div>
+        </div>
+    </section>  -->       
+
+<!-- Questions/Contact -->
+    <section style="display: block;">
+        <div class="container">
+            <div class="row m-btm">
+                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="text-center">
+                                Questions
+                            </h2>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="h3 list-group-item">
+                                Detailed documentation about configuring and using each Pro feature can be found in the
+        <a class="text-success" target="_new" href="https://github.com/mperham/inspeqtor/wiki">Inspeqtor wiki</a>.
+        Read the <a class="text-success" target="_new" href="https://github.com/mperham/sidekiq/wiki/Pro-FAQ">Inspeqtor Pro FAQ</a> for further detail.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <div class="panel panel-default"><!-- was panel-primary -->
+                        <div class="panel-heading">
+                            <h2 class="text-center">
+                                Contact
+                            </h2>
+                        </div>
+                        <ul class="list-group list-group-flush text-center h3">
+                            <li class="list-group-item">
+                                Email <a class="text-success" href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a> with any questions.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <hr>
+                <p class="text-center">&copy; 2014 Contributed Systems LLC. <a class="text-muted" href="http://github.com/mperham/contribsys.com">Source</a></p>
+            </div>
+                        
+        </div>
+        
+    </section>
+<!-- //end questions/contact -->
+
+        <script src="../scripts/min/contribsys-min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+</body>
+</html>
