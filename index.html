@@ -1,61 +1,243 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!-- Home -->
+<html class="no-js">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Contributed Systems : Smart, effective open source infrastructure for your applications" />
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <meta charset="utf-8">
     <title>Contributed Systems</title>
+    <meta name="description" content="open source software, sidekiq, inspeqtor, background jobs, application monitoring, service monitoring, process monitoring, infrastructure monitoring">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/contribsys.css">
+    <script src="scripts/modernizr.js"></script>
+
   </head>
   <body>
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <h1 id="project_title">Contributed Systems</h1>
-          <h2 id="project_tagline">Smart, effective open source infrastructure for your apps</h2>
-        </header>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">Contributed Systems</a> -->
+        <img src="images/logo-contribsys-sm.png" class="navbar-brand" alt="Contributed Systems">
+
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="sidekiq/">Sidekiq</a></li>
+          <li><a href="inspeqtor/">Inspeqtor</a></li>
+        </ul>
+      </div> <!--/.nav-collapse -->
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3><a name="products"></a>Products</h3>
-        <p>
-          Our products are all open source-based, with a open source, free version and a commercial variant with additional
-          features and support options.
-        </p>
-        <p>
-          Our first product family is <a href="http://sidekiq.org">Sidekiq</a> and <a href="http://sidekiq.org/pro">Sidekiq Pro</a>.
-          Our next products are currently under development.
-        </p>
-        <h3><a name="about"></a>About Us</h3>
-        <p>
-          Contributed Systems is based in Portland, OR and was founded by <a href="http://www.mikeperham.com">Mike Perham</a>,
-          a long-time open source developer.  We believe that open source software is the right way to build systems;
-          building products on top of an open source core means the software will be maintained and supported for years to come.
-        </p>
-        <p>
-          Contributed Systems is a play on the computer science term "distributed systems" and the fact that we
-          allow anyone to contribute to our software.
-        </p>
-        <h3><a name="contact"></a>Contact</h3>
-        <p>Email <a href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a> with any questions.</p>
-      </section>
+<!-- Main banner -->
+  <section class="bg-gray" style="display: block;">
+    <div class="container">
+      <div class="clear">
+        <h1>Smart, effective tools for your applications.</h1>
+        <h2>
+          We build world-class open source tools to help you build world-class applications.
+        </h2>
+      </div>
     </div>
+  </section>
+<!-- //end main banner -->
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">&copy; 2014 Contributed Systems LLC</p>
-      </footer>
+<!-- Our Products -->
+  <section style="display: block;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2 class="text-center page-section m-btm">
+          </h2>
+        </div>
+      </div>
+      <div class="row product-row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <!-- <h3 class="text-center">
+                Sidekiq
+              </h3> -->
+              <a href="sidekiq/">
+                <img src="images/logo-sidekiq.png" class="img-responsive center-block m-btm" alt="Sidekiq">
+              </a>
+
+              <h3 class="panel-title text-center">
+                Simple, efficient background processing for Ruby.
+              </h3>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item">
+                Background and scheduled jobs
+              </li>
+              <li class="list-group-item">
+                Web-based management UI in 19 different languages
+              </li>
+              <li class="list-group-item">
+                Error handling, retries with exponential backoff
+              </li>
+              <li class="list-group-item">
+                Extensible middleware and full Ruby API
+              </li>
+              <li class="list-group-item">
+                Dead job queue
+              </li>
+              <li class="list-group-item">
+                Resque compatible
+              </li>
+              <!-- <li class="list-group-item">
+                <i class="glyphicon glyphicon-ok text-primary"></i> Complete Ruby API languages
+              </li>
+              <li class="list-group-item">
+                <i class="glyphicon glyphicon-ok text-primary"></i> Resque compatible
+              </li> -->
+            </ul>
+            <div class="panel-footer text-center">
+               <a class="btn btn-primary btn-lg" href="sidekiq/">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="panel panel-default"><!-- was panel-primary -->
+            <div class="panel-heading">
+              <!-- <h3 class="text-center">
+                Inspeqtor (logo)
+              </h3> -->
+              <a href="inspeqtor/">
+                <img src="images/logo-inspeqtor.png" class="img-responsive center-block m-btm" alt="Inspeqtor">
+              </a>
+
+              <h3 class="panel-title text-center">
+                Application infrastructure monitoring, reimagined.
+              </h3>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item">
+                Monitor your machines and critical services
+              </li>
+              <li class="list-group-item">
+                Write simple rules to verify real-time metrics
+              </li>
+              <li class="list-group-item">
+                Alert staff or restart misbehaving processes
+              </li>
+              <li class="list-group-item">
+                Signal application deploys to silence alerts
+              </li>
+              <li class="list-group-item">
+                Integrates with modern init systems
+              </li>
+              <li class="list-group-item">
+                Works with Linux 3.0+
+              </li>
+            </ul>
+            <div class="panel-footer text-center">
+               <a class="btn btn-primary btn-lg" href="inspeqtor/">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+<!-- //end our products -->
 
+<!-- About -->
+  <section style="display: block;">
+    <div class="container">
+      <hr/>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="images/open-source.png" class="img-responsive center-block" alt="Open Source">
+        </div>
+        <div class="col-md-7">
+          <h2>
+            Open source-based. <span class="text-muted">It's the right way to build systems.</span>
+          </h2>
+          <p class="lead">Our products are all open source-based, with an open source, free version and a commercial variant with additional features and support options. Building commercial products on top of an open source core means the software will be maintained and supported for years to come.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- //end about -->
+
+<!-- Awards... -->
+  <section class="" style="display: block;">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <hr>
+          <h2 class="text-center page-section m-btm">
+            Awards
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4">
+          <a href="https://www.blackducksoftware.com/open-source-rookies/2012-recipients" target="_new"><img src="images/rookie.png" class="img-responsive center-block m-btm" alt="Rookie of the Year"></a>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <a href="http://rubyheroes.com" target="_new"><img src="images/hero-1.svg" width="118" class="img-responsive center-block m-btm" alt="Ruby Hero"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- //awards -->
+
+
+<!-- Questions/Contact -->
+  <section class="m-btm" style="display: block;">
+    <div class="container">
+      <div class="row m-btm">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="text-center">
+                Contact
+              </h2>
+            </div>
+            <ul class="list-group list-group-flush text-center h3">
+              <li class="list-group-item">
+                Email <a href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a> with any questions.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <hr>
+        <p class="text-center">&copy; 2014 Contributed Systems LLC. <a class="text-muted" href="http://github.com/mperham/contribsys.com">source</a></p>
+      </div>
+    </div>
+  </section>
+<!-- //end questions/contact -->
+
+    <script src="scripts/min/contribsys-min.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-2569989-7', 'auto');
-      ga('send', 'pageview');
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-2569989-7');ga('send','pageview');
     </script>
-  </body>
+
+</body>
 </html>
