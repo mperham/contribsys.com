@@ -6156,6 +6156,17 @@ button.close {
     border-radius: 6px;
   }
 }
+@media (max-width: 767px) {
+  .img-space {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .btn-space {
+    padding: 7px 4px;
+    font-size: 13px;
+  }
+}
 .m-btm {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
