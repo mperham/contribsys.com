@@ -12,7 +12,14 @@
     <!-- <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" /> -->
     <link rel="stylesheet" href="css/contribsys.css">
     <script src="scripts/modernizr.js"></script>
-
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-2569989-7', {'sampleRate': 100});ga('send','pageview');
+    </script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -29,9 +36,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-              <a class="navbar-brand" href="#">
-                <img class="img-responsive" alt="Contributed Systems" src="images/logo-contribsys-sm.png">
-              </a>
+        <a class="navbar-brand" href="#">
+          <img class="img-responsive" alt="Contributed Systems" src="images/logo-contribsys-sm.png">
+        </a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -227,17 +234,7 @@
   </section>
 <!-- //end questions/contact -->
 
-    <script src="scripts/min/contribsys-min.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-2569989-7');ga('send','pageview');
-    </script>
+  <script src="scripts/min/contribsys-min.js"></script>
 
 </body>
 </html>

@@ -11,7 +11,14 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="../css/contribsys.css">
         <script src="../scripts/modernizr.js"></script>
-
+        <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-2569989-7', {'sampleRate': 100});ga('send','pageview');
+        </script>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -56,7 +63,7 @@
                         <h2>
                             Application infrastructure monitoring, reimagined.
                         </h2>
-                        <a class="btn btn-success btn-lg" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
+                        <a class="checkout btn btn-success btn-lg" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
                         <img src="../images/inspeqtor-cmd.png" class="img-responsive img-space" alt='' />
@@ -238,7 +245,7 @@
                             <h3 class="panel-title">
                                 0-20<br>machines
                             </h3>
-                            <a class="btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
+                            <a class="checkout btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                         </div>
                     </div>
                 </div>
@@ -253,7 +260,7 @@
                             <h3 class="panel-title">
                                 21-50<br>machines
                             </h3>
-                            <a class="btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
+                            <a class="checkout btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                         </div>
                     </div>
                 </div>                <div class="col-xs-6 col-sm-3 col-md-2">
@@ -267,7 +274,7 @@
                             <h3 class="panel-title">
                                 51-200<br>machines
                             </h3>
-                            <a class="btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
+                            <a class="checkout btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                         </div>
                     </div>
                 </div>                <div class="col-xs-6 col-sm-3 col-md-2">
@@ -281,7 +288,7 @@
                             <h3 class="panel-title">
                                 Unlimited<br>License
                             </h3>
-                            <a class="btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
+                            <a class="checkout btn btn-success" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                         </div>
                     </div>
                 </div>
@@ -351,17 +358,13 @@
     </section>
 <!-- //end questions/contact -->
 
-        <script src="../scripts/min/contribsys-min.js"></script>
+  <script src="../scripts/min/contribsys-min.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+  <script type="text/javascript">
+    $('.checkout').on('click', function() {
+      ga('send', 'event', 'Inspeqtor Checkout', 'Click', 'Inspeqtor Pro');
+    });
+  </script>
 
 </body>
 </html>

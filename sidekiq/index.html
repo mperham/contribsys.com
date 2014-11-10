@@ -11,7 +11,14 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="../css/contribsys.css">
         <script src="../scripts/modernizr.js"></script>
-
+        <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-2569989-7', {'sampleRate': 100});ga('send','pageview');
+        </script>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -58,7 +65,7 @@
                         <h2>
                             Simple, efficient background processing for Ruby.
                         </h2>
-                        <a class="btn btn-danger btn-lg" href="https://plasso.co/s/YSeEjhi5ga">Buy Pro</a>
+                        <a class="checkout btn btn-danger btn-lg" href="https://plasso.co/s/YSeEjhi5ga">Buy Pro</a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
                         <img src="../images/web-ui-lg.png" class="img-responsive img-space" alt='' />
@@ -190,7 +197,7 @@
                                 <a class="btn btn-default btn-lg" href="http://www.sidekiq.org">Try it!</a>
                             </td>
                             <td class="text-center">
-                                <a class="btn btn-danger btn-lg" href="https://plasso.co/s/YSeEjhi5ga">Buy Pro</a>
+                                <a class="checkout btn btn-danger btn-lg" href="https://plasso.co/s/YSeEjhi5ga">Buy Pro</a>
                             </td>
                         </tr>
                     </tfoot>
@@ -317,17 +324,14 @@
     </section>
 <!-- //end questions/contact -->
 
-        <script src="../scripts/min/contribsys-min.js"></script>
+  <script src="../scripts/min/contribsys-min.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+  <script type="text/javascript">
+    $('.checkout').on('click', function() {
+      ga('send', 'event', 'Sidekiq Checkout', 'Click', 'Sidekiq Pro');
+    });
+  </script>
+
 
 </body>
 </html>
