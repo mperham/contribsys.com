@@ -19,7 +19,7 @@
       ga('create','UA-2569989-7', {'sampleRate': 100});ga('send','pageview');
     </script>
     <style>
-      .bs-docs-header {
+      .main-header {
         padding-top: 60px;
         padding-bottom: 60px;
         font-size: 24px;
@@ -28,16 +28,11 @@
         padding: 30px 15px;
         text-shadow: 0 1px 0 rgba(0,0,0,.1);
         background-color: #eac248;
-        color: #650;
-      }
-      .bs-docs-header h1 {
-        color: #111;
       }
       #about .panel-heading, #contact .panel-heading {
         border: 0;
         border-radius: 0;
         border-bottom: 5px solid #eac248;
-        color: #111;
         background-color: inherit;
         padding: 10px 0;
       }
@@ -53,10 +48,13 @@
       }
       .btn-warning {
         background-color: #eac248;
-        color: #111;
+        color: #000;
       }
       ul {
         padding: 0;
+      }
+      #headshot {
+        border-radius: 20px;
       }
     </style>
   </head>
@@ -85,21 +83,25 @@
       </div>
     </div>
 
-    <div class="bs-docs-header" id="content">
+    <div class="main-header" id="content">
       <div class="container">
         <h1>Services</h1>
-        <p>
-          Technical help for Open Source-based systems: due diligence, architecture review, production scaling or troubleshooting.
+        <p class="lead">
+          Technical help for Open Source-based systems.
         </p>
       </div>
     </div>
 
-    <div class="container bs-docs-container">
-      <div class="bs-docs-section">
+    <div class="container">
+      <div>
 
         <h1 class="page-header">Experience</h1>
-        <p>
-          You need an engineer you can trust to help with problems, vet ideas.
+        <p class="lead">
+          You've got a lawyer to call when you need help with legal questions, why not have the same for technical problems?
+        </p>
+        <p class="lead">
+          Need due diligence, architecture review, production scaling or troubleshooting?
+          You need an engineer you can trust to help with problems or vet ideas.
           Someone who has built, scaled and maintained complex websites for more than a decade.
           When you engage Contributed Systems, you aren't getting the first available junior
           developer, you are getting the one and only employee: <strong>Mike Perham</strong>.
@@ -123,8 +125,9 @@
                 <div class="col-sm-4">
                   <h3>Technology Experience</h3>
                   <ul>
-                    <li>15 years experience building web applications on Linux</li>
-                    <li>Ruby, Rails, Go</li>
+                    <li>15 years experience building web applications</li>
+                    <li>Asynchronous, SOA and multithreaded systems</li>
+                    <li>Java, Ruby, Rails, Go, Linux</li>
                     <li>MySQL, Postgresql, Redis, Memcached, Sidekiq</li>
                   </ul>
                 </div>
@@ -144,12 +147,12 @@
                 <div class="col-xs-12 col-sm-8 col-md-7">
                   <p class="lead">
                     "I've helped dozens of clients over the last few years with a broad range of problems:
-                     web application architecture, site scalability and performance and technical
+                     web application architecture, application debugging, scalability or performance problems and technical
                      due diligence for acquision or investment events.  I know I can help you too."
                   </p>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-md-offset-1">
-                  <img src="https://www.mikeperham.com/images/head.jpg" class="img-responsive" alt="headshot"/>
+                  <img src="https://www.mikeperham.com/images/head.jpg" id="headshot" class="img-responsive" alt="headshot"/>
                 </div>
               </div>
             </div>
@@ -164,19 +167,19 @@
                   <h2>Contact</h2>
                 </div>
 
-                <ul class="list-group" style="padding: 20px;">
-                  <li class="list-group-item">
-                    Email <a class="btn btn-warning" href="mailto:mike&#64;contribsys.com">mike&#64;contribsys.com</a> and let's get started.
-                  </li>
-                </ul>
+                <div class="panel-body">
+                  <p>
+                    Email <a class="btn btn-warning" href="mailto:mike&#64;contribsys.com">mike&#64;contribsys.com</a> with details.  I'll advise you if I can help and how.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <div class="footer">
-            <hr>
-            <p class="text-center">&copy; 2014 Contributed Systems LLC. <a class="text-muted" href="http://github.com/mperham/contribsys.com">source</a></p>
+          <hr>
+          <p class="text-center">&copy; 2014 Contributed Systems LLC. <a class="text-muted" href="http://github.com/mperham/contribsys.com">source</a></p>
         </div>
 
       </div>
