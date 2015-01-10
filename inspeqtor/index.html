@@ -19,6 +19,10 @@
           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
           ga('create','UA-2569989-7', {'sampleRate': 100});ga('send','pageview');
         </script>
+        <style>
+          #screenshot { box-shadow:4px 4px 6px #888; }
+          figcaption { font-size: x-small; padding-top: 7px; }
+        </style>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -66,7 +70,10 @@
                         <a class="checkout btn btn-success btn-lg" href="https://plasso.co/s/6EHPPwN1N9">Buy Pro</a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
-                        <img src="../images/inspeqtor-cmd.png" class="img-responsive img-space" alt='' />
+                      <figure>
+                        <img id="screenshot" src="../images/inspeqtor-memory-monitor.png" class="img-responsive img-space" alt=''/>
+                        <figcaption>Inspeqtor Pro's Real-time Memory Monitoring in action</figcaption>
+                      </figure>
                     </div>
                 </div>
             </div>
@@ -140,6 +147,12 @@
                         <tr>
                             <td>Route alerts to an email address</td>
                             <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td>
+                            <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Real-time Memory Monitoring for Go-based daemons</td>
+                            <td></td>
+                            <!-- <td class="text-center"><i class="glyphicon glyphicon-ok text-success"></i></td> -->
                             <td class="bg-success text-center"><i class="glyphicon glyphicon-ok"></i></td>
                         </tr>
                         <tr>
