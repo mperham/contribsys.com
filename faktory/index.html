@@ -1,182 +1,245 @@
 <!doctype html>
-<!-- Faktory -->
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>Faktory - high-performance background job server</title>
-        <meta name="description" content="Faktory provides the features and APIs necessary to scale asynchronous background job processing for any enterprise."/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="stylesheet" href="../css/contribsys.css">
-        <link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-        <style>
-          #screenshot { box-shadow:4px 4px 6px #888; }
-          figcaption { font-size: x-small; padding-top: 7px; }
-          .text-success { color: #000; }
-          #mc_embed_signup{background:#fff; clear:left; font:14px; width:100%;}
-        </style>
-    </head>
-    <body>
-<!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-              <a class="navbar-brand" href="../">
-                <img class="img-responsive" alt="Contributed Systems" width="250" src="../images/contribsys-logo.svg">
-              </a>
-        </div><!-- .nav-bar header -->
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="../">Home</a></li>
-            <li><a href="http://sidekiq.org">Sidekiq</a></li>
-            <li class="active"><a href=".">Faktory</a></li>
-          </ul>
-        </div> <!--/.nav-collapse -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Faktory - high-performance background job system</title>
+  <meta name="description" content="Faktory provides the features and APIs necessary to scale asynchronous background job processing for any enterprise."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    #screenshot { box-shadow:4px 4px 6px #888; }
+    figcaption { font-size: x-small; padding-top: 7px; }
+    .link { color: #333; }
+    .fa-check-circle { color: #080; }
+    .fa-ban { color: #800; }
+    a { color: #bf9105; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar navbar-expand-lg navbar-light bg-transparent" role="navigation">
+      <a class="navbar-brand" href="../">
+        <img class="img-responsive" alt="Contributed Systems" width="250" src="../images/contribsys-logo.svg">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="..">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://sidekiq.org">Sidekiq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href=".">Faktory</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 
+<div class="container-fluid" style="background-color: #eee; padding: 40px 0;">
+  <div class="container">
 <!-- Main banner -->
-    <section class="bg-gray" style="display: block;">
-
-        <div class="container">
-
-            <div class="clear">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
-                        <!-- <h1>Faktory</h1> -->
-                        <img src="../images/faktory-logo.svg" width="525" class="img-responsive center-block m-btm" alt="Faktory">
-                        <h2>
-                            High-performance job processing for the polyglot enterprise.
-                        </h2>
-                        <a class="checkout btn btn-primary btn-lg" href="https://github.com/contribsys/faktory/wiki/">Get Started</a>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
-                      <figure>
-                        <img id="screenshot" src="../images/faktory-ui.png" class="img-responsive img-space" alt=''/>
-                        <figcaption>Faktory's Web UI in action</figcaption>
-                      </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 text-center">
+        <img src="../images/faktory-logo.svg" width="525" class="img-responsive center-block m-btm" alt="Faktory">
+        <h2>High-performance job processing for the polyglot enterprise.</h2>
+        <a class="checkout btn btn-primary btn-lg" href="https://github.com/contribsys/faktory/wiki/">Get Started</a>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+        <figure>
+          <img id="screenshot" src="../images/faktory-ui.png" width="600" class="img-responsive img-space" alt='Web UI'/>
+          <figcaption>Faktory's Web UI in action</figcaption>
+        </figure>
+      </div>
+    </div>
 <!-- // end main banner -->
+  </div>
+</div>
 
-<!-- Pricing -->
-    <section style="display: block;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-                    <h2 class="text-center page-section m-btm">
-                        Pricing
-                    </h2>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-1">
-                    <div class="panel panel-default text-center text-muted">
-                        <div class="panel-heading">
-                            <h3 class="text-muted">
-                                Open Source
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <h3 class="panel-title">
-                              Critical functionality, Free
-                            </h3>
-                            <a class="btn btn-default btn-space" href="https://github.com/contribsys/faktory/wiki">Try Faktory</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="panel panel-primary text-center">
-                        <div class="panel-heading">
-                            <h3>
-                                Professional
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <h3 class="panel-title">
-                                Advanced features for the advanced business, $149/mo for the first server.
-                            </h3>
-                            <a class="checkout btn btn-primary" href="https://billing.contribsys.com/fpro/">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- //end pricing -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              <h3><span class="fa fa-fw fa-github"></span><a href="https://github.com/contribsys/faktory/" target="_new">OSS</a></h3>
+            </th>
+            <th><h3>Pro</h3></th>
+            <th><h3>Enterprise</h3></th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="key">Audience</td>
+          <td>Hobbyists</td>
+          <td>Small Business</td>
+          <td>Med–Large Companies</td>
+        </tr>
+        <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Scheduled-Jobs">Scheduled Jobs</a></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Job-Errors">Error Handling</a></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Monitoring#web-ui">Web UI</a></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Middleware">Middleware</a></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Pro-Cron">Cron Jobs</a></td>
+          <td><span class="fa fa-fw fa-ban"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Pro-Unique-Jobs">Unique Jobs</a></td>
+          <td><span class="fa fa-fw fa-ban"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Pro-Expiring-Jobs">Expiring Jobs</a></td>
+          <td><span class="fa fa-fw fa-ban"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Pro-Redis-Gateway">Redis Gateway</a></td>
+          <td><span class="fa fa-fw fa-ban"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key">Dedicated Support</td>
+          <td>None</td>
+          <td>Email</td>
+          <td>Email</td>
+        </tr>
+        <tr>
+          <td class="key">License</td>
+          <td>GPL</td>
+          <td>Commercial</td>
+          <td>Commercial</td>
+        </tr>
+        <tr>
+          <td class="key">Pricing</td>
+          <td>Free</td>
+          <td>Starting at $149/mo</td>
+          <td>TBA</td>
+        </tr>
+        <tr>
+          <td class="key">Purchasing</td>
+          <td>n/a</td>
+          <td>Credit Card</td>
+          <td>Credit Card, Invoice</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <th></th>
+          <th>
+            <a href="https://github.com/contribsys/faktory/wiki" target="_new" style="width: 100%"
+               class="btn btn-primary btn-lg">Get Started <span class="fa fa-window-restore"></span></a>
+          </th>
+          <th>
+            <a href="https://billing.contribsys.com/fpro/new.cgi" target="_new" class="btn btn-success btn-lg" style="width: 100%">Buy Now
+              <span class="fa fa-chevron-circle-right"></span></a>
+          </th>
+          <th>
+            <a href="#" class="btn btn-primary btn-lg disabled" style="width: 100%">Coming in 2019</a>
+          </th>
+        </tr>
+        </tfoot>
+      </table>
+      <p class="text-center">
+        All credit card sales come with a two week free trial.
+        Read the <a href="https://github.com/contribsys/faktory/wiki/Commercial-FAQ">Commercial FAQ</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
 
 <!-- Questions/Contact -->
-    <section style="display: block;">
-        <div class="container">
-            <div class="row m-btm">
-                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h2 class="text-center">
-                                More Info
-                            </h2>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a class="text-success" target="_new" href="https://github.com/contribsys/faktory/wiki">Faktory wiki</a></li>
-                            <li class="list-group-item"><a class="text-success" target="_new" href="https://www.mikeperham.com/2017/10/24/introducing-faktory/">Introducing Faktory blog post</a></li>
-                            <li class="list-group-item"><a class="text-success" target="_new" href="https://changelog.com/podcast/274">Faktory and The Future of Background Jobs podcast</a></li>
-                            <li class="list-group-item"><a class="text-success" target="_new" href="https://www.mikeperham.com/2018/12/01/introducing-faktory-pro/">Introducing Faktory Pro blog post</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-5">
-                    <div class="panel panel-default"><!-- was panel-primary -->
-                        <div class="panel-heading">
-                            <h2 class="text-center">
-                                Contact
-                            </h2>
-                        </div>
-                        <ul class="list-group list-group-flush text-center">
-                            <li class="list-group-item">
-                                Email <a class="text-primary" href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a> with any questions.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="panel panel-default"><!-- was panel-primary -->
-                        <div class="panel-heading">
-                            <h2 class="text-center">
-                                Newsletter
-                            </h2>
-                        </div>
-                        <ul class="list-group list-group-flush text-center">
-                            <li class="list-group-item">
-                              <form action="https://tinyletter.com/faktory" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/faktory', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-                                <div class="form-group">
-                                  <p><b>Stay informed with our occasional newsletter.</b><br/>
-                                  <small>No spam, just 2-4 emails per year.</small></p>
-                                  <input type="text" style="width:200px" name="email" id="tlemail" placeholder="email address"/>
-                                  <input type="hidden" value="1" name="embed"/>
-                                  <input type="submit" value="Subscribe" />
-                                </div>
-                              </form>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title text-center">More Info <span class="fa fa-fw fa-info-circle"></span></h3>
             </div>
-            <div class="footer">
-                <hr>
-                <p class="text-center">&copy; Contributed Systems LLC. <a class="text-muted" href="http://github.com/mperham/contribsys.com">source</a></p>
-            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a class="link" target="_new" href="https://github.com/contribsys/faktory/wiki">Faktory wiki</a></li>
+              <li class="list-group-item"><a class="link" target="_new" href="https://www.mikeperham.com/2017/10/24/introducing-faktory/">Introducing Faktory blog post</a></li>
+              <li class="list-group-item"><a class="link" target="_new" href="https://changelog.com/podcast/274">Faktory and The Future of Background Jobs podcast</a></li>
+              <li class="list-group-item"><a class="link" target="_new" href="https://www.mikeperham.com/2018/12/01/introducing-faktory-pro/">Introducing Faktory Pro blog post</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
+        <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title text-center">
+                  Newsletter <span class="fa fa-fw fa-inbox"></span>
+                </h3>
+              </div>
+              <div class="card-body">
+                Stay informed with our occasional newsletter.
+                Useful Faktory tips and changes, 2-4 emails per year.
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <form action="https://tinyletter.com/faktory" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/faktory', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                    <div class="form-group">
+                      <input type="text" style="width:200px" name="email" id="tlemail" placeholder="email address"/>
+                      <input type="hidden" value="1" name="embed"/>
+                      <input type="submit" value="Subscribe" />
+                    </div>
+                  </form>
+                </li>
+              </ul>
+          </div>
+
+        </div>
+    </div>
+</div>
 <!-- //end questions/contact -->
 
-  <script src="../scripts/min/contribsys-min.js"></script>
+<div class="container my-5">
+  <footer>
+    <hr>
+    <div class="row">
+      <div class="col">
+        &copy; Contributed Systems LLC. <a href="http://github.com/contribsys/contribsys.com">source</a>
+      </div>
+      <div class="col">
+        Questions, comments? <a href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a>
+      </div>
+    </div>
+  </footer>
+</div>
 
 </body>
 </html>
