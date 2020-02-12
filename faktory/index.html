@@ -6,11 +6,10 @@
   <meta name="description" content="Faktory provides the features and APIs necessary to scale asynchronous background job processing for any enterprise."/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <style>
     #screenshot { box-shadow:4px 4px 6px #888; }
-    figcaption { font-size: x-small; padding-top: 7px; }
     .link { color: #333; }
     .fa-check-circle { color: #080; }
     .fa-ban { color: #800; }
@@ -28,15 +27,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="..">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://sidekiq.org">Sidekiq</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href=".">Faktory</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="..">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://sidekiq.org">Sidekiq</a></li>
+          <li class="nav-item"><a class="nav-link active" href=".">Faktory</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item"><a class="nav-link" href="https://billing.contribsys.com/">Purchase</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://billing.contribsys.com/">Manage Your Account</a></li>
         </ul>
       </div>
     </div>
@@ -49,16 +46,30 @@
       <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 text-center">
         <img src="../images/faktory-logo.svg" width="525" class="img-responsive center-block m-btm" alt="Faktory">
         <h2>High-performance job processing for the polyglot enterprise.</h2>
-        <a class="checkout btn btn-primary btn-lg" href="https://github.com/contribsys/faktory/wiki/">Get Started</a>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
         <figure>
           <img id="screenshot" src="../images/faktory-ui.png" width="600" class="img-responsive img-space" alt='Web UI'/>
-          <figcaption>Faktory's Web UI in action</figcaption>
         </figure>
       </div>
     </div>
 <!-- // end main banner -->
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <a href="https://twitter.com/scottymeuk/status/1226954047095214087">
+        <img width="506" src="../images/faktory-tweet1.png">
+      </a>
+    </div>
+    <div class="col">
+      <a href="https://twitter.com/mike_bianco/status/1226256642561495040">
+        <img width="506" src="../images/faktory-tweet2.png">
+      </a>
+    </div>
   </div>
 </div>
 
@@ -84,7 +95,19 @@
           <td>Med–Large Companies</td>
         </tr>
         <tr>
-          <td class="key"><a href="#">Scheduled Jobs</a></td>
+          <td class="key">Scheduled Jobs</td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key">Responsive Web UI</td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
+          <td class="key">Polyglot Workers</td>
           <td><span class="fa fa-fw fa-check-circle"></span></td>
           <td><span class="fa fa-fw fa-check-circle"></span></td>
           <td><span class="fa fa-fw fa-check-circle"></span></td>
@@ -96,13 +119,7 @@
           <td><span class="fa fa-fw fa-check-circle"></span></td>
         </tr>
         <tr>
-          <td class="key"><a href="#">Web UI</a></td>
-          <td><span class="fa fa-fw fa-check-circle"></span></td>
-          <td><span class="fa fa-fw fa-check-circle"></span></td>
-          <td><span class="fa fa-fw fa-check-circle"></span></td>
-        </tr>
-        <tr>
-          <td class="key"><a href="#">Middleware</a></td>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Docker">Docker Integration</a></td>
           <td><span class="fa fa-fw fa-check-circle"></span></td>
           <td><span class="fa fa-fw fa-check-circle"></span></td>
           <td><span class="fa fa-fw fa-check-circle"></span></td>
@@ -132,13 +149,19 @@
           <td><span class="fa fa-fw fa-check-circle"></span></td>
         </tr>
         <tr>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Pro-Metrics">Statsd Metrics</a></td>
+          <td><span class="fa fa-fw fa-ban"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+          <td><span class="fa fa-fw fa-check-circle"></span></td>
+        </tr>
+        <tr>
           <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Ent-Throttling">Queue Throttling</a></td>
           <td><span class="fa fa-fw fa-ban"></span></td>
           <td><span class="fa fa-fw fa-ban"></span></td>
           <td><span class="fa fa-fw fa-check-circle"></span></td>
         </tr>
         <tr>
-          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Ent-Batches">Batches</a></td>
+          <td class="key"><a href="https://github.com/contribsys/faktory/wiki/Ent-Batches">Complex Workflows</a></td>
           <td><span class="fa fa-fw fa-ban"></span></td>
           <td><span class="fa fa-fw fa-ban"></span></td>
           <td><span class="fa fa-fw fa-check-circle"></span></td>
@@ -200,8 +223,7 @@
 </div>
 
 
-<!-- Questions/Contact -->
-<div class="container mt-5">
+<div class="container my-5">
     <div class="row">
         <div class="col">
           <div class="card">
@@ -242,21 +264,21 @@
                 </li>
               </ul>
           </div>
-
         </div>
     </div>
 </div>
-<!-- //end questions/contact -->
 
-<div class="container my-5">
+<div class="container mb-5">
   <footer>
-    <hr>
     <div class="row">
       <div class="col">
         &copy; Contributed Systems LLC. <a href="https://github.com/mperham/contribsys.com">source</a>
       </div>
       <div class="col">
         Questions, comments? <a href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a>
+      </div>
+      <div class="col">
+        <span class="fa fa-fw fa-twitter"></span> <a href="https://twitter.com/contribsys">@contribsys</a> <a href="https://twitter.com/sidekiq">@sidekiq</a>
       </div>
       <a style="display: none" rel="me" href="https://mastodon.xyz/@mperham">mperham@mastodon.xyz</a>
     </div>

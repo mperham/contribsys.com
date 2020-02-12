@@ -1,199 +1,162 @@
 <!doctype html>
-<!-- Home -->
-<html class="no-js">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Contributed Systems</title>
-    <meta name="description" content="Contributed Systems provides world-class open source tools which help you build world-class applications"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Contributed Systems provides open source and commercial background job systems for ruby, go, python, elixir and javascript business applications"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" /> -->
-    <link rel="stylesheet" href="css/contribsys.css">
-    <script src="scripts/modernizr.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      a { color: #999 }
+      a:hover { color: #666 }
+    </style>
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-  <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+    <div class="container">
+      <div class="navbar navbar-expand-lg navbar-light bg-transparent" role="navigation">
         <a class="navbar-brand" href="#">
           <img class="img-responsive" alt="Contributed Systems" width="250" src="images/contribsys-logo.svg">
         </a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="http://sidekiq.org">Sidekiq</a></li>
-          <li><a href="faktory/">Faktory</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://billing.contribsys.com/">Purchase</a></li>
-          <li><a href="https://billing.contribsys.com/">Manage Your Account</a></li>
-        </ul>
-      </div> <!--/.nav-collapse -->
-      </div>
-    </div>
-
-<!-- Main banner -->
-  <section class="bg-gray" style="display: block;">
-    <div class="container">
-      <div class="clear">
-        <h1>Smart, effective tools for your applications.</h1>
-        <h2>
-          We build world-class open source tools to help you build world-class applications.
-        </h2>
-      </div>
-    </div>
-  </section>
-<!-- //end main banner -->
-
-<!-- Our Products -->
-  <section style="display: block;">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2 class="text-center page-section m-btm">
-          </h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://sidekiq.org">Sidekiq</a></li>
+            <li class="nav-item"><a class="nav-link" href="faktory/index.html">Faktory</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="nav-link" href="https://billing.contribsys.com/">Purchase</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://billing.contribsys.com/">Manage Your Account</a></li>
+          </ul>
         </div>
       </div>
+    </div>
+
+    <div class="jumbotron text-center">
+      <h1>Smart, effective tools for your applications.</h1>
+      <p class="lead">
+        We build world-class open source tools to help you build world-class applications.
+      </p>
+    </div>
+
+    <div class="container">
       <div class="row product-row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-5">
+          <div class="card">
+            <div class="card-header">
               <a href="http://sidekiq.org">
-                <img src="images/logo-sidekiq.png" class="img-responsive center-block m-btm" alt="Sidekiq">
+                <img src="images/logo-sidekiq.png" class="p-4 card-img-top img-responsive" alt="Sidekiq">
               </a>
-              <h3 class="panel-title text-center">
-                Simple, efficient background processing for Ruby.
-              </h3>
+              <p class="card-subtitle text-center">
+                Simple, efficient background processing for Ruby
+              </p>
             </div>
-            <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item">Background and scheduled jobs</li>
-              <li class="list-group-item">Web-based management UI in 25 different languages</li>
-              <li class="list-group-item">Error handling, retries with exponential backoff</li>
-              <li class="list-group-item">Extensible middleware and full Ruby API</li>
-              <li class="list-group-item">Dead job queue</li>
-              <li class="list-group-item">Resque compatible</li>
-            </ul>
-            <div class="panel-footer text-center">
-               <a class="btn btn-primary btn-lg" href="http://sidekiq.org">Learn More</a>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Background and scheduled jobs</li>
+                <li class="list-group-item">Web-based management UI in 25 different languages</li>
+                <li class="list-group-item">Error handling, retries with exponential backoff</li>
+                <li class="list-group-item">Extensible middleware and full Ruby API</li>
+                <li class="list-group-item">Dead job queue</li>
+                <li class="list-group-item">Resque compatible</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary btn-lg" href="http://sidekiq.org">Learn More</a>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-5">
+          <div class="card">
+            <div class="card-header">
               <a href="faktory/">
-                <img src="images/faktory-logo.svg" width="300" class="img-responsive center-block m-btm" alt="Faktory">
+                <img src="images/faktory-logo.svg" class="p-3 card-img-top img-responsive" alt="Faktory">
               </a>
+              <p class="card-subtitle text-center">
+                Feature-filled job processing for all languages
+              </p>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Background and scheduled jobs</li>
+                <li class="list-group-item">Web-based management UI in 25 different languages</li>
+                <li class="list-group-item">Error handling, retries with exponential backoff</li>
+                <li class="list-group-item">Official Docker images for easy deployment</li>
+                <li class="list-group-item">High-performance, 1000s of jobs/second/node.</li>
+                <li class="list-group-item">Support for Node, Python, Ruby, Go, Elixir &amp; more</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary btn-lg" href="faktory/index.html">Learn More</a>
+            </div>
+          </div>
+        </div>
 
-              <h3 class="panel-title text-center">
-                High-performance job processing for the polyglot enterprise
-              </h3>
-            </div>
-            <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item">Background and scheduled jobs</li>
-              <li class="list-group-item">Web-based management UI in 25 different languages</li>
-              <li class="list-group-item">Error handling, retries with exponential backoff</li>
-              <li class="list-group-item">Dead job queue</li>
-              <li class="list-group-item">High-performance, 1000s of jobs/second/node.</li>
-              <li class="list-group-item">Support for Node, Python, Ruby, Go, Elixir &amp; more</li>
-            </ul>
-            <div class="panel-footer text-center">
-               <a class="btn btn-primary btn-lg" href="faktory/">Learn More</a>
-            </div>
+      </div>
+    </div>
+
+  <div class="jumbotron py-5 mb-5">
+    <div class="row">
+      <div class="col-md-4 px-5">
+        <img src="images/open-source.png" class="img-responsive" alt="Open Source">
+      </div>
+      <div class="col-md-8">
+        <h2>
+          Open source-based. <span class="text-muted">It's the right way to build systems.</span>
+        </h2>
+        <p class="lead">Our products are all open source-based, with an open source, free version and commercial variants with additional features and support options. Building commercial products on top of an open source core means the software will be maintained and supported for years to come.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 mb-5">
+        <div class="card">
+          <div class="card-header">
+            <h3>Awards</h3>
+          </div>
+          <div class="card-body">
+            <a class="mr-5" href="https://www.blackducksoftware.com/open-source-rookies/2012-recipients" target="_new"><img src="images/rookie.png" class="img-responsive" alt="Rookie of the Year"></a>
+            <a href="http://rubyheroes.com" target="_new"><img src="images/hero-1.svg" width="118" class="img-responsive" alt="Ruby Hero"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 mb-5">
+        <div class="card">
+          <div class="card-header">
+            <h3>Contact</h3>
+          </div>
+          <div class="card-body">
+            Email <a href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a> with any questions.
           </div>
         </div>
       </div>
     </div>
-  </section>
-<!-- //end our products -->
+  </div>
 
-<!-- About -->
-  <section style="display: block;">
-    <div class="container">
-      <hr/>
-      <div class="row">
-        <div class="col-md-5">
-          <img src="images/open-source.png" class="img-responsive center-block" alt="Open Source">
-        </div>
-        <div class="col-md-7">
-          <h2>
-            Open source-based. <span class="text-muted">It's the right way to build systems.</span>
-          </h2>
-          <p class="lead">Our products are all open source-based, with an open source, free version and a commercial variant with additional features and support options. Building commercial products on top of an open source core means the software will be maintained and supported for years to come.</p>
-        </div>
+  <div class="container mb-5">
+  <footer>
+    <div class="row">
+      <div class="col">
+        &copy; Contributed Systems LLC. <a href="https://github.com/mperham/contribsys.com">source</a>
       </div>
+      <div class="col">
+        Questions, comments? <a href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a>
+      </div>
+      <div class="col">
+        <span class="fa fa-fw fa-twitter"></span> <a href="https://twitter.com/contribsys">@contribsys</a> <a href="https://twitter.com/sidekiq">@sidekiq</a>
+      </div>
+      <a style="display: none" rel="me" href="https://mastodon.xyz/@mperham">mperham@mastodon.xyz</a>
     </div>
-  </section>
-<!-- //end about -->
-
-<!-- Awards... -->
-  <section class="" style="display: block;">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <hr>
-          <h2 class="text-center page-section m-btm">
-            Awards
-          </h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4">
-          <a href="https://www.blackducksoftware.com/open-source-rookies/2012-recipients" target="_new"><img src="images/rookie.png" class="img-responsive center-block m-btm" alt="Rookie of the Year"></a>
-        </div>
-        <div class="col-sm-3 col-md-2">
-          <a href="http://rubyheroes.com" target="_new"><img src="images/hero-1.svg" width="118" class="img-responsive center-block m-btm" alt="Ruby Hero"></a>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- //awards -->
-
-
-<!-- Questions/Contact -->
-  <section class="m-btm" style="display: block;">
-    <div class="container">
-      <div class="row m-btm">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="text-center">
-                Contact
-              </h2>
-            </div>
-            <ul class="list-group list-group-flush text-center h3">
-              <li class="list-group-item">
-                Email <a href="mailto:info&#64;contribsys.com">info&#64;contribsys.com</a> with any questions.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <hr>
-        <p class="text-center">&copy; Contributed Systems LLC. <a class="text-muted" href="http://github.com/mperham/contribsys.com">source</a></p>
-      </div>
-    </div>
-  </section>
-<!-- //end questions/contact -->
-
-  <script src="scripts/min/contribsys-min.js"></script>
+  </footer>
+  </div>
 
 </body>
 </html>
