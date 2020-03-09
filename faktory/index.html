@@ -14,13 +14,18 @@
     .fa-check-circle { color: #080; }
     .fa-ban { color: #800; }
     a { color: #bf9105; }
+    .brand-logo { width: 100%; }
+    @media (max-width: 400px) {
+      .navbar { padding: 0; }
+      .navbar-brand { margin-left: -1rem; margin-right: 0; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="navbar navbar-expand-lg navbar-light bg-transparent" role="navigation">
       <a class="navbar-brand" href="../">
-        <img class="img-responsive" alt="Contributed Systems" width="250" src="../images/contribsys-logo.svg">
+        <img alt="Contributed Systems" class="img-fluid brand-logo" src="../images/contribsys-logo.svg">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
